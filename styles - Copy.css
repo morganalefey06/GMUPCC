@@ -1,0 +1,201 @@
+/*
+ * Default styles
+ */
+@media screen {
+
+CSS selector {  
+	font-family: 'Lusitana', serif;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+html {
+	text-align: center;
+	margin: 5px auto;
+	}
+
+body {	
+	line-height: 1.5em;
+	margin: 0px auto;
+	padding: 5px;
+	width: auto;
+	min-width: 300px;
+	float: none;
+	background: #ffffff url('images/acanthus.jpg') repeat-x center-center;
+
+
+	}
+
+h1 {	
+	font: 30pt Lusitana, serif;
+ 	font-weight: bold;
+  	line-height: 30pt;
+	text-decoration:none;
+	color:#77cdb0;
+	text-align:left;
+	padding: 10px;
+
+}
+.dropcap{
+    	float:left;
+	font-family:Lusitana,Georgia, serif;
+   	font-size:400%;
+    	margin-top:14px;
+    	margin-right:5px;
+    	color:#77cdb0;
+	
+    }
+    
+
+
+p {	font: 12pt merriweather sans, sans-serif;
+    	font-weight: normal;
+	line-height: 20pt;
+	text-align:justify;
+	text-indent:5px;
+	padding: 10px;
+}
+
+.nav {
+   	list-style:none;
+    	margin:0;
+    	padding:5px;
+    	text-align:left;
+	color:#77cdb0;
+	font: 14pt merriweather sans, sans-serif;
+
+}
+.nav li{
+    	display:inline;
+}
+.nav a{
+    	display:inline-block;
+    	padding:10px;
+}
+
+a:link {
+	color:#fff;
+	text-decoration:none;
+	background-color:#77cdb0
+
+
+}      /* unvisited link */
+
+a:visited {
+	color:#fff;
+	text-decoration:none;
+	background-color:#77cdb0
+
+
+}  /* visited link */
+
+a:hover {
+	color:#fff;
+	text-decoration:underline;
+	background-color:#e4e48a
+
+
+}  /* mouse over link */
+
+
+a:active {
+	color:#fff;
+	text-decoration:underline;
+	background-color:#99ccff
+
+
+}  /* selected link */
+
+
+
+
+
+
+
+
+/*
+*650px and larger: browser
+*/
+@media screen and (min-width: 650px){
+		
+.nav a {
+		font-size:larger;
+		}		
+}
+
+
+
+/*
+*650px to 575: tablet
+*/
+@media screen and (max-width: 649px) and (min-width: 575px){
+		
+	.nav a {
+		font-size:75%;
+		}		
+}
+
+
+
+/*
+*575px to 450: tablet
+*/
+@media screen and (max-width: 574px) and (min-width: 450px){
+		
+	.nav a {
+		font-size:70%;
+		}	
+	
+	h1 {
+		font-size:175%;
+		}
+		
+	
+		}
+
+
+
+
+/*
+*450px and smaller: mobile
+*/
+@media screen and (max-width: 449px) and (min-width: 0px){
+	
+	body {	
+		max-width:100%;
+		float:none;
+		letter-spacing: 1px;
+		line-height:125%;
+		}
+		
+	h1 {
+		font-size:150%;
+		}
+
+
+	nav a {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+		border: none;
+		text-align: left
+		}	
+
+	nav ul {
+		display: table-row;
+
+				}
+		
+	nav li { 
+		display: table-cell;
+		margin:0;
+			}
+			
+		
+	
+	#content {
+		float:none;
+		width:100%;
+		}
+		
+	img { display: none; }
+
+}
